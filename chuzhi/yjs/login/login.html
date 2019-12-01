@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>初至-登录</title>
+    <link rel="stylesheet" href="../assets/common.css">
+    <link rel="stylesheet" href="./login.css">
+    <script src="../assets/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+
+<body>
+    <!-- <iframe src="./map.html" class="iframe" frameborder="0"></iframe> -->
+    <div class="container">
+        <div class="app-header" style="position: relative;">
+            <img src="../assets/images/h.png" alt="初至" onclick="home()">
+            <ul>
+                <li>首页</li>
+                <li>产品</li>
+                <li>优势</li>
+                <li>合作</li>
+                <li>下载</li>
+                <li>我们</li>
+            </ul>
+            <div class="login-student" onclick="login()">学生登录</div>
+            <div class="login-company" onclick="login()">企业/学校登录</div>
+        </div>
+        <div class="app-content">
+            <div class="modal"></div>
+            <div class="item">
+                <div class="label">联系人</div>
+                <input type="text" class="input">
+            </div>
+            <div class="item">
+                <div class="label">联系电话</div>
+                <input type="text" class="input">
+            </div>
+            <div class="item">
+                <div class="label">学校名称</div>
+                <input type="text" class="input">
+            </div>
+            <div class="item">
+                <div class="label"></div>
+                <button class="btn">申请</button>
+            </div>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+</body>
+
+</html>

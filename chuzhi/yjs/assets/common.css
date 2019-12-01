@@ -1,0 +1,71 @@
+html,
+body {
+    margin     : 0px;
+    padding    : 0px;
+    height     : 100vh;
+    font-family: "SimHei", "Microsoft YaHei"
+}
+
+.container {
+    width   : 1400px;
+    margin  : 0 auto;
+    position: relative;
+}
+
+.app-header {
+    width           : 1400px;
+    height          : 90px;
+    background-color: #f1d522;
+    z-index         : 100;
+    position        : fixed;
+    top             : 0px;
+    display         : flex;
+    align-items     : center;
+}
+
+ul {
+    list-style : none;
+    padding    : 0px;
+    display    : flex;
+    margin-left: 390px;
+}
+
+.app-header>img {
+    margin-left: 42px;
+    cursor: pointer;
+}
+
+.app-header li {
+    width     : 64px;
+    text-align: center;
+
+    font-family   : PingFangTC-Regular;
+    font-size     : 16px;
+    color         : #403E3E;
+    letter-spacing: -0.43px;
+    cursor        : pointer;
+}
+
+.app-header .login-student {
+    opacity     : 0.58;
+    font-family : PingFangSC-Regular;
+    font-size   : 20px;
+    color       : #252525;
+    text-align  : center;
+    padding     : 0 16px;
+    margin-left : 160px;
+    margin-right: 28px;
+    cursor      : pointer;
+}
+
+.app-header .login-company {
+    width        : 147px;
+    height       : 44px;
+    line-height  : 44px;
+    text-align   : center;
+    color        : #252525;
+    font-size    : 20px;
+    border       : 1px solid #878484;
+    border-radius: 4px;
+    cursor       : pointer;
+}
