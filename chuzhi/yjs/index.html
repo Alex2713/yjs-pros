@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>初至实习就业一体化服务平台</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/common.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./assets/aos/aos.css">
@@ -16,31 +17,43 @@
     <script type="text/javascript" src="./assets/echarts.min.js"></script>
     <!-- <script type="text/javascript" src="./assets/echarts-4.2.0.min.js"></script> -->
     <script type="text/javascript" src="./assets/map/china.js"></script>
+    <script src="./js/scroll.js"></script>
 </head>
 
 <body>
     <!-- <iframe src="./map.html" class="iframe" frameborder="0"></iframe> -->
     <div class="container" id="home">
         <div class="app-header">
-            <img src="./assets/images/h.png" alt="初至" onclick="home()">
-            <ul>
-                <li onclick="navTo('home')">首页</li>
-                <li onclick="navTo('product')">产品</li>
-                <li onclick="navTo('goodness')">优势</li>
-                <li onclick="navTo('business')">合作</li>
-                <li onclick="navTo('download')">下载</li>
-                <li onclick="navTo('we')">我们</li>
-            </ul>
-            <div class="login-student" onclick="login()">学生登录</div>
-            <div class="login-company" onclick="login()">企业/学校登录</div>
-        </div>
-        <div class="app-banner">
-            <div class="desc">
-                <div class="title">初至实习就业一体化服务平台</div>
-                <div class="subtitle">成功初入职场的年轻人</div>
+            <div class="header-container common-padding">
+                <div style="width: 68px;height: 68px;display: flex;align-items: center;">
+                    <img height="60" src="./assets/images/h.png" alt="初至" onclick="home()">
+                </div>
+                <div style="flex: 1;"></div>
+                <ul>
+                    <li onclick="navTo('home')">首页</li>
+                    <li onclick="navTo('product')">产品</li>
+                    <li onclick="navTo('goodness')">优势</li>
+                    <li onclick="navTo('business')">合作</li>
+                    <li onclick="navTo('download')">下载</li>
+                    <li onclick="navTo('we')">我们</li>
+                </ul>
+                <a href="">
+                    <div class="login-student">学生登录</div>
+                </a>
+                <a href="">
+                    <div class="login-company">企业/学校登录</div>
+                </a>
             </div>
         </div>
-        <div class="app-content what-we-do"  id="product">
+        <div class="app-banner">
+            <div class="banner-container">
+                <div class="desc">
+                    <div class="title">初至实习就业一体化服务平台</div>
+                    <div class="subtitle">成功初入职场的年轻人</div>
+                </div>
+            </div>
+        </div>
+        <div class="app-content what-we-do" id="product">
             <div class="hr"></div>
             <!-- <span class="we-title">我们在做什么</span> -->
             <img src="./assets/images/we-title1.jpg" class="we-title" alt="我们在做什么">
@@ -54,6 +67,7 @@
             </div>
         </div>
         <div class="app-content what-we-do-c1">
+            <div class="modal"></div>
             <div class="desc" data-aos="fade-right">
                 <div class="title">初至专注于提高学校实践教学质量、提升学生创新实践能力</div>
                 <div class="subtitle">
@@ -62,7 +76,7 @@
             </div>
             <div class="img" data-aos="fade-left"></div>
         </div>
-        <div class="app-contents"  id="goodness">
+        <div class="app-contents" id="goodness">
             <div class="modal"></div>
             <div class="app-content what-we-do">
                 <div class="hr"></div>
@@ -105,7 +119,7 @@
                 </div>
             </div>
         </div>
-        <div class="app-content what-we-do"   id="business">
+        <div class="app-content what-we-do" id="business">
             <div class="hr"></div>
             <img src="./assets/images/we-title3.jpg" class="we-title" alt="有多少人正在使用初至">
             <div class="d3"></div>
@@ -115,22 +129,22 @@
             <div class="contents3" data-aos="fade-left">
                 <div class="item">
                     <span>高等院校</span>
-                    <div>100+</div>
+                    <div id="countOfSchool">100+</div>
                 </div>
                 <div class="item">
                     <span>知名企业</span>
-                    <div>500+</div>
+                    <div id="countOfCompany">500+</div>
                 </div>
                 <div class="item">
                     <span>求职学生</span>
-                    <div>20W+</div>
+                    <div id="countOfStudent">20W+</div>
                 </div>
             </div>
         </div>
         <div class="map-content">
             <div>院校</div>
         </div>
-        <div class="use-content"   id="download">
+        <div class="use-content" id="download">
             <div class="what-we-do">
                 <div class="hr" style="background-color: #fff;opacity: .29; margin-top: 86px;"></div>
                 <img src="./assets/images/we-title4.jpg" class="we-title img4" alt="使用初至">
@@ -139,11 +153,13 @@
             <div class="content4">
                 <div class="item">
                     <div class="title">学校</div>
-                    <div class="btn">免费试用</div>
+                    <div class="btn" onclick="onApply()">免费试用</div>
                 </div>
                 <div class="item">
                     <div class="title">企业</div>
-                    <div class="btn">注册入口</div>
+                    <a href="">
+                        <div class="btn">注册入口</div>
+                    </a>
                 </div>
                 <div style="flex: 1;"></div>
                 <div class="item item-stu">
@@ -162,7 +178,7 @@
             </div>
         </div>
 
-        <div class="app-footer"   id="we">
+        <div class="app-footer" id="we">
             <div class="what-we-do">
                 <div class="hr" style="background-color: #fff;opacity: .29; margin-top: 60px;"></div>
                 <img src="./assets/images/we-title5.jpg" class="we-title img4" alt="使用初至">
@@ -188,6 +204,27 @@
             </div>
             <div class="hr1"></div>
             <div class="beian">©2019京ICP备19013282号-1</div>
+        </div>
+    </div>
+    <div class="container apply" id="modal-o">
+        <div class="app-content">
+            <div class="modal" onclick="onHidemodal()"></div>
+            <div class="item">
+                <div class="label">联系人</div>
+                <input type="text" class="input">
+            </div>
+            <div class="item">
+                <div class="label">联系电话</div>
+                <input type="text" class="input">
+            </div>
+            <div class="item">
+                <div class="label">学校名称</div>
+                <input type="text" class="input">
+            </div>
+            <div class="item">
+                <div class="label"></div>
+                <button class="btn">申请</button>
+            </div>
         </div>
     </div>
     <script src="./js/map.js"></script>

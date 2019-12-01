@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin     : 0px;
@@ -7,20 +11,40 @@ body {
 }
 
 .container {
-    width   : 1400px;
-    margin  : 0 auto;
-    position: relative;
+    /* width              : 1400px; */
+    /* margin             : 0 auto; */
+    width                 : 100%;
+    min-width             : 1400px;
+    position              : relative;
+    /* display            : flex;
+    justify-content       : center; */
+}
+
+.container1 {
+    background-color: #f1d522;
+    display         : flex;
+    justify-content : center;
+}
+
+.common-padding {
+    padding: 0 36px;
 }
 
 .app-header {
-    width           : 1400px;
-    height          : 90px;
+    width           : 100%;
     background-color: #f1d522;
+    height          : 90px;
     z-index         : 100;
     position        : fixed;
     top             : 0px;
-    display         : flex;
-    align-items     : center;
+}
+
+.header-container {
+    width      : 1400px;
+    display    : flex;
+    margin     : 0 auto;
+    align-items: center;
+    height     : 100%;
 }
 
 ul {
@@ -31,11 +55,11 @@ ul {
 }
 
 .app-header>img {
-    margin-left: 42px;
-    cursor: pointer;
+    /* margin-left: 42px; */
+    cursor        : pointer;
 }
 
-.app-header li {
+.header-container li {
     width     : 64px;
     text-align: center;
 
@@ -46,7 +70,7 @@ ul {
     cursor        : pointer;
 }
 
-.app-header .login-student {
+.header-container .login-student {
     opacity     : 0.58;
     font-family : PingFangSC-Regular;
     font-size   : 20px;
@@ -58,7 +82,7 @@ ul {
     cursor      : pointer;
 }
 
-.app-header .login-company {
+.header-container .login-company {
     width        : 147px;
     height       : 44px;
     line-height  : 44px;
@@ -68,4 +92,8 @@ ul {
     border       : 1px solid #878484;
     border-radius: 4px;
     cursor       : pointer;
+}
+
+a {
+    text-decoration: none;
 }

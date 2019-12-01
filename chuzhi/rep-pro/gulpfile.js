@@ -5,14 +5,13 @@ const sass = require('gulp-sass');
 
 sass.compiler = require('node-sass');
 
-function defaultTask(cb) {
-    // place code for your default task here
+function css(cb) {
+    gulp.src('style.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./css'));
+    console.log('scss loadding!!!');
     cb();
 }
 
-watch(['/style.scss'], { delay: 500 }, function (cb) {
-    return gulp.src('style.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('style.css'));
-});
-exports.default = defaultTask
+watch('style.scss', { delay: 500 }, css);
+exports.default = css
