@@ -2,24 +2,9 @@
 var oldTop = newTop = 0;
 var scrollStatus = '';
 var onbodyScroll = null;
-var minTop = 80
-$(function () {
-    oldTop = newTop = document.body.scrollTop || document.documentElement.scrollTop;//兼容写法
-    AOS.init({
-        offset: 200,
-        duration: 800,
-        once: true
-    });
-    window.onscroll = onbodyScroll;
-    // 初始化地图
-    initMap();
-});
-
 onbodyScroll = function () {
-    if ($('.is-active').length !== 0) {
-        return;
-    }
     newTop = document.body.scrollTop || document.documentElement.scrollTop;//兼容写法
+    console.log(`newTop:${newTop}`);
     if (+newTop > +oldTop) {
         if (scrollStatus === 'down') {
             oldTop = newTop;
@@ -45,13 +30,13 @@ onbodyScroll = function () {
             add2AndShowHeader();
         }
     }
-    // console.log(`scrollStatus:${scrollStatus}`);
+    console.log(`scrollStatus:${scrollStatus}`);
     oldTop = newTop;
 }
 
 function hideHeader() {
     $('.app-header').animate({
-        marginTop: -90
+        marginTop: -100
     }, 200)
 }
 
@@ -61,27 +46,17 @@ function add2AndShowHeader() {
         marginTop: 0,
         height: 64
     }, 200);
+    $('.header-container img').animate({
+        height: 42
+    }, 100);
 }
 
 function remove2() {
     // $('.app-header').addClass('app-header2');
     $('.app-header').animate({
-        height: 90
+        height: 64
     }, 200);
-}
-
-function initMap() {
-    // 初始化echarts-map，在获取完数据后展示地图
-    initEcharts("china", "中国");
-}
-
-function onApply() {
-    $('.modal').slideDown('normal', () => {
-        $('.modal').addClass('is-active');
-    });
-}
-
-function onCloseModal() {
-    $('.modal').removeClass('is-active');
-    $('.modal').slideUp();
+    $('.header-container img').animate({
+        height: 60
+    }, 100);
 }
