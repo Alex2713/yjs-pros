@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>初至实习就业一体化服务平台</title>
+    <link rel="stylesheet" href="./assets/common.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/aos/aos.css">
+    <script src="./assets/aos/aos.js"></script>
+
+    <script src="./js/common.js"></script>
+    <script src="./assets/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./assets/echarts.min.js"></script>
+    <!-- <script type="text/javascript" src="./assets/echarts-4.2.0.min.js"></script> -->
+    <script type="text/javascript" src="./assets/map/china.js"></script>
+</head>
+
+<body>
+    <!-- <iframe src="./map.html" class="iframe" frameborder="0"></iframe> -->
+    <div class="container" id="home">
+        <div class="app-header">
+            <img src="./assets/images/h.png" alt="初至" onclick="home()">
+            <ul>
+                <li onclick="navTo('home')">首页</li>
+                <li onclick="navTo('product')">产品</li>
+                <li onclick="navTo('goodness')">优势</li>
+                <li onclick="navTo('business')">合作</li>
+                <li onclick="navTo('download')">下载</li>
+                <li onclick="navTo('we')">我们</li>
+            </ul>
+            <div class="login-student" onclick="login()">学生登录</div>
+            <div class="login-company" onclick="login()">企业/学校登录</div>
+        </div>
+        <div class="app-banner">
+            <div class="desc">
+                <div class="title">初至实习就业一体化服务平台</div>
+                <div class="subtitle">成功初入职场的年轻人</div>
+            </div>
+        </div>
+        <div class="app-content what-we-do"  id="product">
+            <div class="hr"></div>
+            <!-- <span class="we-title">我们在做什么</span> -->
+            <img src="./assets/images/we-title1.jpg" class="we-title" alt="我们在做什么">
+            <div class="d3"></div>
+        </div>
+        <div class="app-content what-we-do-c">
+            <div class="img" data-aos="fade-right"></div>
+            <div class="desc" data-aos="fade-left">
+                <div class="title">初至实习就业一体化服务平台</div>
+                <div class="subtitle">北京初至科技有限公司打造的高校、学生和用人单位的实习就业一体化服务与平台——初至实习就业一体化服务平台</div>
+            </div>
+        </div>
+        <div class="app-content what-we-do-c1">
+            <div class="desc" data-aos="fade-right">
+                <div class="title">初至专注于提高学校实践教学质量、提升学生创新实践能力</div>
+                <div class="subtitle">
+                    针对学校实习监控困难、监督缺失和岗位资源不足等问题，整合各方资源，推出实习管理平台、创新实践学分绩平台、校企合作平台，搭建学生、学校、单位三方互通的桥梁，为学生提供职业测评、职前培训和岗位信息，为学校提供过程管理平台及实习基地资源，为企业提供精准招聘，全面提升学生实习和就业能力，实现学校、学生和企业三方共赢。
+                </div>
+            </div>
+            <div class="img" data-aos="fade-left"></div>
+        </div>
+        <div class="app-contents"  id="goodness">
+            <div class="modal"></div>
+            <div class="app-content what-we-do">
+                <div class="hr"></div>
+                <img src="./assets/images/we-title2.jpg" class="we-title" alt="我们解决了什么问题">
+                <div class="d3"></div>
+            </div>
+            <div class="app-content what-we-do1">
+                <div data-aos="fade-right">
+                    <img src="./assets/images/a4.png" alt="学校">
+                    <span class="title">学校</span>
+                    <div class="content content1">实现学生实习动态全掌握，控制学生外出安全风险</div>
+                    <div class="content1">大量真实优质全职，实习岗位，就业率不再成为问题</div>
+                    <div class="content2">智能宣讲会，双选会管理系统，减少无用桌面工作</div>
+                    <div class="content1" class="content1">多维度数据统计报告，为评优、学科建设、招生就业等提供科学决策依据</div>
+                    <div>个性化需求精细配置。提供数据报表、三方协议、调查问卷、实习报告等功能</div>
+                </div>
+                <div data-aos="fade-right">
+                    <img src="./assets/images/b5.png" alt="老师">
+                    <span class="title">老师</span>
+                    <div class="content1">实现学生动态全掌握，控制学生外出安全风险</div>
+                    <div class="content1">通过实习日志、总结、全面了解学生实习进程和状态</div>
+                    <div class="content2">在线指导、评价评分，快速便捷指导学生</div>
+                    <div class="content1">记录工作，实习数据生成，每份工作努力和成果看得见</div>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="./assets/images/c6.png" alt="企业">
+                    <span class="title">企业</span>
+                    <div class="content1">精准发布职位信息精准推送直达高校覆盖全职实习岗位</div>
+                    <div class="content1">精准高效动态信息最新最全高效实习就业通知海量实习应届生源信息</div>
+                    <div class="content2">在线报名双选会宣讲会，一键报名，简历直达</div>
+                    <div class="content1">全面了解学生真是情况，降低用人风险。线上面试，降低招聘成本</div>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="./assets/images/d7.png" alt="学生">
+                    <span class="title">学生</span>
+                    <div class="content1">海量实习和就业机会，智能精准匹配岗位</div>
+                    <div class="content1">款速记录实习点滴，方面老师指导，提高个人能力</div>
+                    <div class="content2">实习实践过程全纪录，通过成长曲线查漏补缺，为工作做好准备</div>
+                    <div class="content1" style="margin-top:80px;">只能实习预警系统，为外出实习提供多层安全保障</div>
+                </div>
+            </div>
+        </div>
+        <div class="app-content what-we-do"   id="business">
+            <div class="hr"></div>
+            <img src="./assets/images/we-title3.jpg" class="we-title" alt="有多少人正在使用初至">
+            <div class="d3"></div>
+        </div>
+        <div class="app-content3">
+            <div class="iframe" id="china-map" data-aos="fade-right"></div>
+            <div class="contents3" data-aos="fade-left">
+                <div class="item">
+                    <span>高等院校</span>
+                    <div>100+</div>
+                </div>
+                <div class="item">
+                    <span>知名企业</span>
+                    <div>500+</div>
+                </div>
+                <div class="item">
+                    <span>求职学生</span>
+                    <div>20W+</div>
+                </div>
+            </div>
+        </div>
+        <div class="map-content">
+            <div>院校</div>
+        </div>
+        <div class="use-content"   id="download">
+            <div class="what-we-do">
+                <div class="hr" style="background-color: #fff;opacity: .29; margin-top: 86px;"></div>
+                <img src="./assets/images/we-title4.jpg" class="we-title img4" alt="使用初至">
+                <div class="d3 d4"></div>
+            </div>
+            <div class="content4">
+                <div class="item">
+                    <div class="title">学校</div>
+                    <div class="btn">免费试用</div>
+                </div>
+                <div class="item">
+                    <div class="title">企业</div>
+                    <div class="btn">注册入口</div>
+                </div>
+                <div style="flex: 1;"></div>
+                <div class="item item-stu">
+                    <div class="title">学生</div>
+                    <div class="item-stu1">
+                        <div>
+                            <div class="ewm ewm1"></div>
+                            <div class="title1">android</div>
+                        </div>
+                        <div>
+                            <div class="ewm ewm2"></div>
+                            <div class="title1">ios</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-footer"   id="we">
+            <div class="what-we-do">
+                <div class="hr" style="background-color: #fff;opacity: .29; margin-top: 60px;"></div>
+                <img src="./assets/images/we-title5.jpg" class="we-title img4" alt="使用初至">
+                <div class="d3 d4"></div>
+            </div>
+            <div class="content5">
+                <div class="item">
+                    <div class="img img1"></div>
+                    <div class="title">13126990103</div>
+                </div>
+                <div class="item">
+                    <div class="img img2"></div>
+                    <div class="title">cuiz@chuzhiyun.com</div>
+                </div>
+                <div class="item">
+                    <div class="img img3"></div>
+                    <div class="title">公众号：初至招聘</div>
+                </div>
+                <div class="item">
+                    <div class="img img4"></div>
+                    <div class="title">北京市海淀区方圆大厦</div>
+                </div>
+            </div>
+            <div class="hr1"></div>
+            <div class="beian">©2019京ICP备19013282号-1</div>
+        </div>
+    </div>
+    <script src="./js/map.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
