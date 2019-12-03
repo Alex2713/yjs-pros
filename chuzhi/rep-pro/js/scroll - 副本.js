@@ -2,9 +2,9 @@
 var oldTop = newTop = 0;
 var scrollStatus = '';
 var onbodyScroll = null;
-
 onbodyScroll = function () {
     newTop = document.body.scrollTop || document.documentElement.scrollTop;//兼容写法
+    console.log(`newTop:${newTop}`);
     if (+newTop > +oldTop) {
         if (scrollStatus === 'down') {
             oldTop = newTop;
@@ -30,13 +30,13 @@ onbodyScroll = function () {
             add2AndShowHeader();
         }
     }
-    // console.log(`scrollStatus:${scrollStatus}`);
+    console.log(`scrollStatus:${scrollStatus}`);
     oldTop = newTop;
 }
 
 function hideHeader() {
     $('.app-header').animate({
-        marginTop: -90
+        marginTop: -100
     }, 200)
 }
 
@@ -54,7 +54,7 @@ function add2AndShowHeader() {
 function remove2() {
     // $('.app-header').addClass('app-header2');
     $('.app-header').animate({
-        height: 90
+        height: 64
     }, 200);
     $('.header-container img').animate({
         height: 60

@@ -1,3 +1,15 @@
+
+
+var minTop = 80;
+var seriesData = toolTipData = [];
+
+var max = 0,
+    min = 0; // 侧边最大值最小值
+var maxSize4Pin = 40,
+    minSize4Pin = 30;
+
+var mapName = '';
+
 // 金额转换万字单位 start
 function unitConvert(num) {
     if (num) {
@@ -34,257 +46,6 @@ function strNumSize(tempNum) {
 // 金额转换万字单位 end
 var myChart = echarts.init(document.getElementById('china-map'));
 // var oBack = document.getElementById("back");
-
-// http://39.105.130.231:8080/practice/owDataCount/countAll
-// {
-//     "success": true, 
-//     "message":"返回的说明语句",
-//     "data": {
-//             "schools": "院校数量", 
-//             "companys": "企业数量", 
-//             "students": "学生数量"
-//          }
-// }
-// http://39.105.130.231:8080/practice/owDataCount/findAll
-// 全国省份数据
-var toolTipData = [{
-    "idx": "",
-    "provincecode": "",
-    "provincename": "天津",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "河北",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "山西",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "内蒙古",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "辽宁",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "吉林",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "黑龙江",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "上海",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "江苏",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "浙江",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}
-    , {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "安徽",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "福建",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "江西",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "山东",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "河南",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "湖北",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "湖南",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "广东",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "广西",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "海南",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "重庆",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "四川",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "贵州",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "云南",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "西藏",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "陕西",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "甘肃",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "青海",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "宁夏",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}, {
-    "idx": "",
-    "provincecode": "",
-    "provincename": "新疆",
-    "schools": 100,
-    "companys": 100,
-    "students": 100
-}
-
-    // "provinceName": "新疆",
-    // "provinceKey": 650000,
-    // "cityName": null,
-    // "cityKey": null,
-    // "shopCount": 43,
-    // "totalPrice": 294423.4,
-    // "orderCount": 11741,
-    // "onlineCount": 0
-]
-var seriesData = [];
-for (var i = 0; i < toolTipData.length; i++) {
-    seriesData[i] = {};
-    seriesData[i].name = toolTipData[i].provincename;
-    seriesData[i].value = toolTipData[i].schools + toolTipData[i].companys + toolTipData[i].students;
-    seriesData[i].provinceKey = toolTipData[i].provincecode;
-}
-
-var max = Math.max.apply(Math, seriesData.map(function (o) {
-    return o.value
-})),
-    min = 0; // 侧边最大值最小值
-var maxSize4Pin = 40,
-    minSize4Pin = 30;
-
-var mapName = '';
 
 function getGeoCoordMap(name) {
     name = name ? name : 'china';
@@ -415,13 +176,13 @@ function initEcharts(pName, Chinese_) {
             // selectedMode: 'false',
             label: {
                 normal: {
-                    show: true, //显示省份标签
+                    show: false, //显示省份标签
                     textStyle: {
                         color: "#895139"
                     } //省份标签字体颜色
                 },
                 emphasis: { //对应的鼠标悬浮效果
-                    show: true,
+                    show: false,
                     textStyle: {
                         color: "#323232"
                     }
@@ -454,7 +215,7 @@ function initEcharts(pName, Chinese_) {
                 var b = minSize4Pin - a * min;
                 b = maxSize4Pin - a * max;
                 // 调整地图圆点大小，根据综合值决定大小
-                return (a * val[2] + b) * .5;
+                return (a * val[2] + b) * .45;
             },
             label: {
                 normal: {
@@ -470,10 +231,10 @@ function initEcharts(pName, Chinese_) {
             },
             itemStyle: {
                 normal: {
-                    color: (a) => {
+                    color: (val) => {
                         // 调整圆点颜色
-                        const per = 1; // 最亮为头部底色，表示最大值，0为透明
-                        return `rgba(241, 213, 34, ${per})`
+                        const per = val.value[2] / max; // 最亮为头部底色，表示最大值，0为透明
+                        return `rgba(241, 213, 34, ${per.toFixed(2)})`
                     }
                 }
             },

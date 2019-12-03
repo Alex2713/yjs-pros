@@ -1,10 +1,12 @@
+
+var isMenuShow = false;
 function login() {
     location.href = '/login/login.html'
 }
 function home() {
     location.href = '../index.html'
 }
-var isMenuShow = false;
+
 function navTo(id) {
     $('.is-active').removeClass('is-active');
     isMenuShow = false;

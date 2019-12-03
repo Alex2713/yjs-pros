@@ -1,0 +1,246 @@
+{
+    "success": true,
+    "message": "返回的说明语句",
+    "data": [
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "天津",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "河北",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "山西",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "内蒙古",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "辽宁",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "吉林",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "黑龙江",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "上海",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "江苏",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "浙江",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "安徽",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "福建",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "江西",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "山东",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "河南",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "湖北",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "湖南",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "广东",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "广西",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "海南",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "重庆",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "四川",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "贵州",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "云南",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "西藏",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "陕西",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "甘肃",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "青海",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "宁夏",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
+            "provincename": "新疆",
+            "schools": 20,
+            "companys": 20,
+            "students": 20
+        }
+    ]
+}

@@ -122,6 +122,36 @@
     }
 }
 
+@media screen and (min-width: 600px) {
+
+    .what-we-do1 .items {
+        flex-flow: row nowrap !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .banner {
+        display: flex;
+        justify-content: center !important;
+    }
+    .banner .desc{
+        left: 20% !important;
+    }
+    .banner .desc .title1{
+        width: 180px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner .desc{
+        left: 30% !important;
+    }
+    .banner .desc .title1{
+        width: 100px !important;
+    }
+}
+
 html,
 body {
     margin: 0px;
@@ -140,6 +170,11 @@ body {
     align-items: center;
     min-height: 64px;
     max-height: 90px;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
 }
 
 .desc3 {
@@ -217,7 +252,8 @@ body {
     font-size: 50px;
     color: #231916;
     letter-spacing: 0.4px;
-    line-height: 62px;
+    /* line-height: 62px; */
+    margin-bottom: 3rem;
     font-weight: normal;
 }
 
