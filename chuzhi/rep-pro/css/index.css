@@ -77,6 +77,11 @@
     }
 }
 
+@media screen and (max-width: 640px) {
+    .map-content1{
+        margin-left: 35px!important;
+    }
+}
 .container {
     max-width: 1224px;
     padding: 0 20px;
@@ -500,18 +505,18 @@ body {
 }
 
 .map-content {
-    width: 80%;
-    /* padding-left: 180px; */
+    /* width: 80%; */
+    padding-left: 4%;
     margin-top: -68px;
     padding-bottom: 60px;
     margin: 0 auto;
 }
 
 .map-content1 {
-    position: absolute;
+    /* position: absolute;
     bottom: 0px;
-    padding-left: 100px;
-    width: 80%;
+    left: 10%; */
+    width: 550px;
     margin: 0 auto;
 }
 
