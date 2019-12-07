@@ -507,9 +507,9 @@ body {
 .map-content {
     /* width: 80%; */
     padding-left: 4%;
-    margin-top: -68px;
     padding-bottom: 60px;
     margin: 0 auto;
+    margin-top: -68px;
 }
 
 .map-content1 {
@@ -518,6 +518,7 @@ body {
     left: 10%; */
     width: 550px;
     margin: 0 auto;
+    margin-top: -68px;
 }
 
 .map-content>div,
