@@ -63,6 +63,7 @@ function getGeoCoordMap(name) {
 
 function convertData(data) { // 转换数据
     var geoCoordMap = getGeoCoordMap(mapName);
+    console.log(geoCoordMap);
     var res = [];
     for (var i = 0; i < data.length; i++) {
         var geoCoord = geoCoordMap[data[i].name]; // 数据的名字对应的经纬度

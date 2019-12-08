@@ -5,6 +5,14 @@
         {
             "idx": "",
             "provincecode": "",
+            "provincename": "北京",
+            "schools": 100,
+            "companys": 100,
+            "students": 100
+        },
+        {
+            "idx": "",
+            "provincecode": "",
             "provincename": "天津",
             "schools": 100,
             "companys": 100,
