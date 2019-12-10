@@ -123,10 +123,6 @@
         padding: 1rem 1.25rem;
     }
 
-    .title-img1 {
-        background: #fafafa !important;
-    }
-
     .modal1 {
         display: block !important;
     }
@@ -146,8 +142,8 @@
 @media screen and (max-width: 800px) {
 
     .banner {
-        display: flex;
-        justify-content: center !important;
+        /* display: flex;
+        justify-content: center !important; */
     }
 
     .banner .desc {
