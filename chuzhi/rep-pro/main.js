@@ -14,10 +14,10 @@ $(function () {
 function initData() {
     $.ajax({
         // url: 'http://39.105.130.231:8080/practice/owDataCount/countAll',
-        url: './data/all.json',
+        url: '/data/all.json',
         type: 'get',
+        dataType: 'json',
         success: (rsl) => {
-            console.log(rsl);
             if (rsl && rsl.success) {
                 // 地图，总数量赋值
                 initMapData(rsl.data);
@@ -39,8 +39,8 @@ function initProviceData() {
         // url: 'http://39.105.130.231:8080/practice/owDataCount/countAll',
         url: './data/province.json',
         type: 'get',
+        dataType: 'json',
         success: (rsl) => {
-            console.log(rsl);
             if (rsl && rsl.success) {
                 toolTipData = rsl.data;
                 for (var i = 0; i < toolTipData.length; i++) {

@@ -426,7 +426,7 @@ body {
     margin-top: 42px;
 }
 
-.what-we-do1 .item>.title {
+.what-we-do1 .item .title {
     font-family: PingFangSC-Medium;
     font-size  : 30px;
     margin-top : 25px;
@@ -565,7 +565,7 @@ body {
     flex-flow : column;
 }
 
-.content4>.item>.title {
+.content4>.item .title {
     text-align : center;
     font-family: PingFangSC-Medium;
     font-size  : 30px;
@@ -682,7 +682,7 @@ body {
     background-image: url(../assets/images/o@2x.png);
 }
 
-.content5>.item>.title {
+.content5>.item .title {
     margin-top : 32px;
     font-family: PingFangTC-Regular;
     font-size  : 21px;
