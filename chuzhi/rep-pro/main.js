@@ -23,7 +23,7 @@ function initData() {
     $.ajax({
         // url: 'http://39.105.130.231:8080/practice/owDataCount/countAll',
         // url: './data/all.json',
-        url: url,
+        url: url + '/practice/owDataCount/countAll',
         type: 'get',
         dataType: 'json',
         success: (rsl) => {
@@ -55,7 +55,7 @@ function initProviceData() {
     $.ajax({
         // url: 'http://39.105.130.231:8080/practice/owDataCount/countAll',
         // url: './data/province.json',
-        url: url,
+        url: url + '/practice/owDataCount/countAll',
         type: 'get',
         dataType: 'json',
         success: (rsl) => {
