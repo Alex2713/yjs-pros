@@ -14,7 +14,7 @@ $(function () {
 function initData() {
     $.ajax({
         // url: 'http://39.105.130.231:8080/practice/owDataCount/countAll',
-        url: '/data/all.json',
+        url: './data/all.json',
         type: 'get',
         dataType: 'json',
         success: (rsl) => {
