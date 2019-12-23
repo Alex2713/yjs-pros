@@ -12,9 +12,18 @@ $(function () {
 });
 
 function initData() {
+    let url = '';
+    if (location.href.indexOf('chuzhiyun') !== -1) {
+        url = 'http://www.chuzhiyun.com/';
+    } else if (location.href.indexOf('chuzhi.guduokeji') !== -1) {
+        url = 'http://www.chuzhi.guduokeji.com/';
+    } else {
+        url = './data/all.json';
+    }
     $.ajax({
         // url: 'http://39.105.130.231:8080/practice/owDataCount/countAll',
-        url: './data/all.json',
+        // url: './data/all.json',
+        url: url,
         type: 'get',
         dataType: 'json',
         success: (rsl) => {
@@ -35,9 +44,18 @@ function initMapData(data) {
 }
 
 function initProviceData() {
+    let url = '';
+    if (location.href.indexOf('chuzhiyun') !== -1) {
+        url = 'http://www.chuzhiyun.com/';
+    } else if (location.href.indexOf('chuzhi.guduokeji') !== -1) {
+        url = 'http://www.chuzhi.guduokeji.com/';
+    } else {
+        url = './data/province.json';
+    }
     $.ajax({
         // url: 'http://39.105.130.231:8080/practice/owDataCount/countAll',
-        url: './data/province.json',
+        // url: './data/province.json',
+        url: url,
         type: 'get',
         dataType: 'json',
         success: (rsl) => {
