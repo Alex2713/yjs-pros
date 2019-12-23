@@ -18,12 +18,12 @@ function initData() {
     } else if (location.href.indexOf('chuzhi.guduokeji') !== -1) {
         url = 'http://www.chuzhi.guduokeji.com/';
     } else {
-        url = './data/all.json';
+        url = '';
     }
     $.ajax({
         // url: 'http://39.105.130.231:8080/practice/owDataCount/countAll',
         // url: './data/all.json',
-        url: url + '/practice/owDataCount/countAll',
+        url: url ? (url + 'practice/owDataCount/countAll') : './data/all.json',
         type: 'get',
         dataType: 'json',
         success: (rsl) => {
@@ -38,9 +38,9 @@ function initData() {
 }
 
 function initMapData(data) {
-    $('#countOfSchool').html(data.wcl);
-    $('#countOfCompany').html(data.ycl);
-    $('#countOfStudent').html(data.sum);
+    $('#countOfSchool').html(data.schools);
+    $('#countOfCompany').html(data.companys);
+    $('#countOfStudent').html(data.students);
 }
 
 function initProviceData() {
@@ -50,12 +50,12 @@ function initProviceData() {
     } else if (location.href.indexOf('chuzhi.guduokeji') !== -1) {
         url = 'http://www.chuzhi.guduokeji.com/';
     } else {
-        url = './data/province.json';
+        url = '';
     }
     $.ajax({
-        // url: 'http://39.105.130.231:8080/practice/owDataCount/countAll',
+        // url: 'http://39.105.130.231:8080/practice/owSchoolApply/countAll',
         // url: './data/province.json',
-        url: url + '/practice/owDataCount/countAll',
+        url: url ? (url + 'practice/owSchoolApply/countAll') : './data/province.json',
         type: 'get',
         dataType: 'json',
         success: (rsl) => {
