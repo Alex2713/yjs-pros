@@ -14,14 +14,14 @@ $(function () {
 function initData() {
     let url = '';
     if (location.href.indexOf('chuzhiyun') !== -1) {
-        url = 'http://www.chuzhiyun.com/';
+        url = 'https://www.chuzhiyun.com/';
     } else if (location.href.indexOf('chuzhi.guduokeji') !== -1) {
-        url = 'http://chuzhi.guduokeji.com/';
+        url = 'https://chuzhi.guduokeji.com/';
     } else {
         url = '';
     }
     $.ajax({
-        // url: 'http://39.105.130.231:8080/practice/owDataCount/countAll',
+        // url: 'https://39.105.130.231:8080/practice/owDataCount/countAll',
         // url: './data/all.json',
         url: url ? (url + 'practice/owDataCount/countAll') : './data/all.json',
         type: 'get',
@@ -46,14 +46,14 @@ function initMapData(data) {
 function initProviceData() {
     let url = '';
     if (location.href.indexOf('chuzhiyun') !== -1) {
-        url = 'http://www.chuzhiyun.com/';
+        url = 'https://www.chuzhiyun.com/';
     } else if (location.href.indexOf('chuzhi.guduokeji') !== -1) {
-        url = 'http://chuzhi.guduokeji.com/';
+        url = 'https://chuzhi.guduokeji.com/';
     } else {
         url = '';
     }
     $.ajax({
-        // url: 'http://39.105.130.231:8080/practice/owSchoolApply/countAll',
+        // url: 'https://39.105.130.231:8080/practice/owSchoolApply/countAll',
         // url: './data/province.json',
         url: url ? (url + 'practice/owSchoolApply/countAll') : './data/province.json',
         type: 'get',
