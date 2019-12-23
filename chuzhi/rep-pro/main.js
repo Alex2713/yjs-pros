@@ -16,7 +16,7 @@ function initData() {
     if (location.href.indexOf('chuzhiyun') !== -1) {
         url = 'http://www.chuzhiyun.com/';
     } else if (location.href.indexOf('chuzhi.guduokeji') !== -1) {
-        url = 'http://www.chuzhi.guduokeji.com/';
+        url = 'http://chuzhi.guduokeji.com/';
     } else {
         url = '';
     }
@@ -48,7 +48,7 @@ function initProviceData() {
     if (location.href.indexOf('chuzhiyun') !== -1) {
         url = 'http://www.chuzhiyun.com/';
     } else if (location.href.indexOf('chuzhi.guduokeji') !== -1) {
-        url = 'http://www.chuzhi.guduokeji.com/';
+        url = 'http://chuzhi.guduokeji.com/';
     } else {
         url = '';
     }
