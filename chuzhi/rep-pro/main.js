@@ -55,7 +55,7 @@ function initProviceData() {
     $.ajax({
         // url: 'https://39.105.130.231:8080/practice/owSchoolApply/countAll',
         // url: './data/province.json',
-        url: url ? (url + 'practice/owSchoolApply/countAll') : './data/province.json',
+        url: url ? (url + 'practice/owDataCount/findAll') : './data/province.json',
         type: 'get',
         dataType: 'json',
         success: (rsl) => {
